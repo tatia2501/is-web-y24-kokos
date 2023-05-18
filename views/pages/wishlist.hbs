@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{>head}}
+</head>
+<body>
+{{>header}}
+<main>
+  {{>navbar}}
+  <section class="wishlist">
+    <div class="wishlist_text">Теперь список книг, которые вы хотите купить, всегда под рукой!</div>
+    <form class="wishlist_form">
+      <input class="wishlist_input" maxlength="50" required minlength="1" type="text" value="" placeholder="Введите название книги">
+      <button type="submit" class="wishlist_button">Добавить</button>
+    </form>
+    <ul id="wishlist_list">
+      <template id="template">
+        <li class="book_block">
+          <input type="checkbox" class="wishlist_check" id="wishlist_check">
+          <div class="wishlist_book"></div>
+          <i class="delete_book">удалить</i>
+        </li>
+      </template>
+    </ul>
+  </section>
+  <script src="../Scripts/WishList.js"></script>
+  <script type="text/javascript">shineLinks('menu-act');</script>
+</main>
+{{>footer}}
+</body>
+</html>

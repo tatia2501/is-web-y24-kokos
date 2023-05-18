@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  {{>head}}
+</head>
+<body>
+{{>header}}
+<main>
+  {{>navbar}}
+  <div id="specials_info">
+    <template id="specials_temp">
+      <div class="specials">
+        <img id="specials_img" alt="specialOffer">
+        <div class="specials_details">
+          <div class="content">
+            <p id="specials_h1"><br></p>
+            <p id="specials_h2"><br></p>
+          </div>
+        </div>
+      </div>
+    </template>
+  </div>
+  <script type="text/javascript" src="Scripts/SpecialOffer.js"></script>
+  <script type="text/javascript">shineLinks('menu-act');</script>
+</main>
+{{>footer}}
+</body>
+</html>

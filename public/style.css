@@ -1,0 +1,806 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    height: 80px;
+    width: 100%;
+}
+
+header input{
+    border-color: #910c6f;
+}
+
+.nav_bar {
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+    border-top: 1px dotted #910c6f;
+    border-bottom: 1px dotted #910c6f;
+    margin: 10px 0;
+    padding: 5px 5px;
+}
+
+.nav_bar a{
+    color: #910c6f;
+    font-size: large;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    padding: 10px;
+}
+
+.welcome {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+}
+
+.quotes {
+    position: relative;
+    background: #fdecf9;
+    border: 6px dotted #910c6f;
+}
+
+.quotes .quotes_img{
+    width: 95%;
+    margin: 15px;
+}
+
+.quotes .quote_text {
+    position: absolute;
+    top: 20%;
+    left: 12%;
+    right: 25%;
+    font-family: 'Balsamiq Sans', cursive;
+    color: #000000;
+}
+
+.kokos {
+    position: relative;
+}
+
+.kokos #kokos_img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    text-align: left;
+}
+
+.kokos #kokos_text {
+    position: absolute;
+    font-family: 'Balsamiq Sans', cursive;
+    color: #ffffff;
+    -webkit-text-stroke: 0.7px #910c6f;
+    top: 72%;
+    bottom: 10%;
+    right: 5%;
+    left: 7%;
+}
+
+main h1{
+    color: #000000;
+    text-align: center;
+    font-family: 'Balsamiq Sans', cursive;
+}
+
+main h2 a{
+    color: #000000;
+    font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+    margin: 10px;
+}
+
+.sales {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.sale {
+    position: relative;
+}
+
+.sale .sale_text {
+    position: absolute;
+    font-family: 'Nunito', sans-serif;
+    color: rgba(0, 0, 0, 1);
+    background-color: rgba(250, 250, 250, 0.5);
+    bottom: 20%;
+    left: 10%;
+}
+
+.sale .sales_img{
+    width: 100%;
+    text-align: left;
+    filter: drop-shadow(0 0 15px beige);
+}
+
+.books_list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container {
+    display: flex;
+    margin: 15px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.container .imgBx {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.container .details {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    box-sizing: border-box;
+}
+
+.container .details h1{
+    color: #000000;
+    font-family: 'Nunito', sans-serif;
+    text-align: left;
+}
+
+.container .details h2 {
+    line-height: 1em;
+    text-align: left;
+    color: #696969;
+    font-family: 'Nunito', sans-serif;
+}
+
+.container .details h3 {
+    line-height: 1em;
+    color: #a2a2a2;
+    font-family: 'Nunito', sans-serif;
+    text-align: left;
+    margin: 12px 0 3px 0;
+}
+
+.container .details button {
+    background: #000000;
+    color: #ffffff;
+    border: none;
+    font-weight: 600;
+    font-family: 'Nunito', sans-serif;
+    padding: 2px 5px;
+    margin: 3px;
+}
+
+.bestsellers{
+    background: #f1ffe1;
+}
+
+.news{
+    background: #e3f8ff;
+}
+
+.kids{
+    background: #f1ffe1;
+}
+
+.site_menu {
+    display: block;
+    background-color: #ffffff;
+    text-align: center;
+    justify-content: center;
+    position: sticky;
+    bottom: 0;
+    z-index: 1;
+    padding: 7px 0;
+}
+
+.site_menu a {
+    color: #910c6f;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    padding: 4px 15px;
+}
+
+.site_menu a:hover {
+    background-color: #fdecf9;
+}
+
+.current {
+    background-color: #fdecf9;
+    border-right: 2px dotted #910c6f;
+    border-left: 2px dotted #910c6f;
+}
+
+footer {
+    background: #fdecf9;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+}
+
+footer h1 {
+    font-size: larger;
+}
+
+footer .contact{
+    font-size: medium;
+    line-height: normal;
+    color: #000000;
+    text-decoration: none;
+}
+
+footer .contact_img{
+    height: 50px;
+    margin: 3px;
+    padding: 2px;
+    display: inline-block;
+}
+
+.wishlist {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wishlist_text {
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 25px;
+    color: #000000;
+    margin: 20px;
+}
+
+.wishlist_form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fdecf9;
+    border: 2px dotted #910c6f;
+    border-radius: 10px;
+    width: 600px;
+    height: 100px;
+}
+
+.wishlist_input {
+    border-color: #fdecf9;
+    background: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 10px;
+    margin: 5px;
+    height: 40px;
+    width: 300px;
+}
+
+.wishlist_button {
+    border: 1px solid #910c6f;
+    background: #fdecf9;
+    font-family: 'Nunito', sans-serif;
+    border-radius: 10px;
+    margin: 5px;
+    height: 40px;
+}
+
+#wishlist_list {
+    width: 500px;
+    list-style: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+#wishlist_list li {
+    padding: 10px;
+    background-color: #fdecf9;
+    border: 1px solid #910c6f;
+}
+
+.wishlist_check{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-color: #ffffff;
+    border: 1px solid #910c6f;
+    cursor: pointer;
+    -webkit-appearance: none;
+}
+
+.wishlist_checked {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #910c6f;
+    cursor: pointer;
+    -webkit-appearance: none;
+    background-color: #910c6f;
+}
+
+.wishlist_book {
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    padding: 0 10px;
+}
+
+.delete_book {
+    display: inline-block;
+    padding: 10px 0;
+    float: right;
+    cursor: pointer;
+}
+
+.purchased {
+    display: inline-block;
+    font-family: 'Nunito', sans-serif;
+    font-size: 15px;
+    padding: 0 10px;
+    text-decoration: line-through;
+}
+
+.faq .question {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bolder;
+    font-size: 27px;
+}
+
+.faq .answer {
+    font-family: 'Nunito', sans-serif;
+    font-size: 20px;
+}
+
+#book_info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background: #fdecf9;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.page-link {
+    color: #910c6f;
+    font-size: x-large;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Nunito', sans-serif;
+    padding: 10px;
+    margin-right: 20px;
+    border: 2px dotted #910c6f;
+}
+
+#specials_info {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.specials {
+    height: 400px;
+    width: 1000px;
+    display: flex;
+    margin: 15px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+#specials_img {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.specials_details {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    box-sizing: border-box;
+    margin: 15px;
+}
+
+#specials_h1 {
+    color: #000000;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-size: 22px;
+}
+
+#specials_h2 {
+    line-height: 1em;
+    text-align: center;
+    color: #696969;
+    font-family: 'Nunito', sans-serif;
+    font-size: 17px;
+}
+
+#amount_less {
+    color: #a2a2a2;
+    font-family: 'Nunito', sans-serif;
+    text-align: left;
+    text-decoration: none;
+}
+
+#amount_more {
+    color: #a2a2a2;
+    font-family: 'Nunito', sans-serif;
+    text-align: left;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 600px) {
+    header input {
+        height: 30px;
+        font-size: 15px;
+        width: 150px;
+    }
+    header .logo_img  {
+        height: 50px;
+        width: auto;
+        padding: 2px;
+    }
+    header .menu_icons .menu_img {
+        height: 35px;
+        width: auto;
+        padding: 2px;
+    }
+    header .menu_icons button{
+        border: none;
+        background: none;
+    }
+    header .points {
+        display: none;
+        position: absolute;
+        background-color: #ffffff;
+        z-index: 1;
+    }
+    header .points a {
+        color: #910c6f;
+        text-decoration: none;
+        display: block;
+        padding: 10px 15px;
+        border: 1px solid #fdecf9;
+    }
+    .menu_icons:hover .points {
+        display: block;
+    }
+    .menu_icons a:hover {
+        background-color: #fdecf9;
+    }
+    header .icons {
+        display: none;
+    }
+    .quotes {
+        width: 90%;
+        margin: 0.1%;
+    }
+    .quote_text {
+        font-size: 16px;
+    }
+    .kokos {
+        width: 90%;
+        margin: 0.1%;
+    }
+    #kokos_text {
+        font-size: 15px;
+    }
+    main h1 {
+        font-size: 25px;
+    }
+    main h2 a {
+        font-size: 22px;
+    }
+    .sale{
+        width: 90%;
+        margin: 1%;
+    }
+    .sale_text {
+        font-size: 20px;
+    }
+    .container {
+        width: 90%;
+        height: 250px;
+    }
+    .container .details {
+        padding: 15px;
+    }
+    .container .details h1{
+        font-size: 18px;
+    }
+    .container .details h2 {
+        font-size: 15px;
+    }
+    .container .details h3 {
+        font-size: 16px;
+    }
+    .container .details button {
+        font-size: 12px;
+        letter-spacing: 1px;
+        border-radius: 30px;
+    }
+    .wishlist_form {
+        width: 390px;
+    }
+    .wishlist_list {
+        width: 350px;
+    }
+}
+
+@media screen and (min-width: 600px)  and (max-width: 800px) {
+    header input {
+        height: 40px;
+        font-size: 20px;
+        width: 200px;
+    }
+    header .logo_img  {
+        height: 55px;
+        width: auto;
+        padding: 2px;
+    }
+    header .menu_icons {
+        display: none;
+    }
+    header .icon_img {
+        height: 40px;
+        width: auto;
+        padding: 2px;
+    }
+    .quotes {
+        width: 90%;
+        margin: 0.1%;
+    }
+    .quote_text {
+        font-size: 23px;
+    }
+    .kokos {
+        width: 90%;
+        margin: 0.1%;
+    }
+    #kokos_text {
+        font-size: 20px;
+    }
+    main h1 {
+        font-size: 25px;
+    }
+    main h2 a {
+        font-size: 22px;
+    }
+    .sale{
+        width: 90%;
+        margin: 1%;
+    }
+    .sale_text {
+        font-size: 20px;
+    }
+    .container {
+        width: 70%;
+        height: 250px;
+    }
+    .container .details {
+        padding: 15px;
+    }
+    .container .details h1{
+        font-size: 18px;
+    }
+    .container .details h2 {
+        font-size: 15px;
+    }
+    .container .details h3 {
+        font-size: 16px;
+    }
+    .container .details button {
+        font-size: 12px;
+        letter-spacing: 1px;
+        border-radius: 30px;
+    }
+}
+
+@media screen and (min-width: 800px) and (max-width: 1200px) {
+    header input {
+        height: 40px;
+        font-size: 20px;
+        width: 250px;
+    }
+    header .logo_img  {
+        height: 60px;
+        width: auto;
+        padding: 2px;
+    }
+    header .menu_icons {
+        display: none;
+    }
+    header .icon_img {
+        height: 40px;
+        width: auto;
+        padding: 2px;
+    }
+    .quotes {
+        width: 45%;
+        margin: 0.1%;
+    }
+    .quote_text {
+        font-size: 18px;
+    }
+    .kokos {
+        width: 45%;
+        margin: 0.1%;
+    }
+    #kokos_text {
+        font-size: 17px;
+    }
+    main h1 {
+        font-size: 30px;
+    }
+    main h2 a {
+        font-size: 25px;
+    }
+    .sale{
+        width: 45%;
+        margin: 1%;
+    }
+    .sale_text {
+        font-size: 22px;
+    }
+    .container {
+        width: 40%;
+        height: 250px;
+    }
+    .container .details {
+        padding: 15px;
+    }
+    .container .details h1{
+        font-size: 18px;
+    }
+    .container .details h2 {
+        font-size: 15px;
+    }
+    .container .details h3 {
+        font-size: 16px;
+    }
+    .container .details button {
+        font-size: 12px;
+        letter-spacing: 1px;
+        border-radius: 30px;
+    }
+}
+
+@media screen and (min-width: 1100px) and (max-width: 1800px) {
+    header input {
+        height: 50px;
+        font-size: 25px;
+        width: 400px;
+    }
+    header .logo_img  {
+        height: 70px;
+        width: auto;
+        padding: 2px;
+    }
+    header .menu_icons {
+        display: none;
+    }
+    header .icon_img {
+        height: 50px;
+        width: auto;
+        padding: 2px;
+    }
+    .quotes {
+        width: 45%;
+        margin: 0.1%;
+    }
+    .quote_text {
+        font-size: 25px;
+    }
+    .kokos {
+        width: 45%;
+        margin: 0.1%;
+    }
+    #kokos_text {
+        font-size: 25px;
+    }
+    main h1 {
+        font-size: 33px;
+    }
+    main h2 a {
+        font-size: 27px;
+    }
+    .sale{
+        width: 45%;
+        margin: 1%;
+    }
+    .sale_text {
+        font-size: 28px;
+    }
+    .container {
+        width: 30%;
+        height: 300px;
+    }
+    .container .details {
+        padding: 20px;
+    }
+    .container .details h1{
+        font-size: 22px;
+    }
+    .container .details h2 {
+        font-size: 15px;
+    }
+    .container .details h3 {
+        font-size: 20px;
+    }
+    .container .details button {
+        font-size: 15px;
+        letter-spacing: 1px;
+        border-radius: 40px;
+    }
+}
+
+@media screen and (min-width: 1800px) {
+    header input {
+        height: 50px;
+        font-size: 25px;
+        width: 600px;
+    }
+    header .logo_img  {
+        height: 70px;
+        width: auto;
+        padding: 2px;
+    }
+    header .menu_icons {
+        display: none;
+    }
+    header .icon_img {
+        height: 50px;
+        width: auto;
+        padding: 2px;
+    }
+    .quotes {
+        width: 45%;
+        margin: 0.1%;
+    }
+    .quote_text {
+        font-size: 30px;
+    }
+    .kokos {
+        width: 45%;
+        margin: 0.1%;
+    }
+    #kokos_text {
+        font-size: 30px;
+    }
+    main h1 {
+        font-size: 37px;
+    }
+    main h2 a {
+        font-size: 30px;
+    }
+    .sale{
+        width: 45%;
+        margin: 1%;
+    }
+    .sale_text {
+        font-size: 33px;
+    }
+    .container {
+        width: 30%;
+        height: 300px;
+    }
+    .container .details {
+        padding: 20px;
+    }
+    .container .details h1{
+        font-size: 22px;
+    }
+    .container .details h2 {
+        font-size: 15px;
+    }
+    .container .details h3 {
+        font-size: 20px;
+    }
+    .container .details button {
+        font-size: 15px;
+        letter-spacing: 1px;
+        border-radius: 40px;
+    }
+}

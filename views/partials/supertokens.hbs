@@ -1,0 +1,18 @@
+<script src="https://cdn.jsdelivr.net/gh/supertokens/supertokens-web-js/bundle/website.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/supertokens/supertokens-web-js/bundle/supertokens.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/supertokens/supertokens-web-js/bundle/session.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/supertokens/supertokens-web-js/bundle/emailpassword.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script>
+  supertokens.init({
+    appInfo: {
+      apiDomain: 'https://web-tatia.onrender.com',
+      apiBasePath: "/auth",
+      appName: "...",
+    },
+    recipeList: [
+      supertokensSession.init(),
+      supertokensEmailPassword.init(),
+    ],
+  });
+</script>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  {{>head}}
+</head>
+<body>
+{{>header}}
+<main>
+  {{>navbar}}
+  <div id="faq_info">
+  <template id="faq_temp">
+    <div class="faq">
+      <p class="question"></p>
+      <p class="answer"></p>
+    </div>
+  </template>
+  </div>
+  <script type="text/javascript" src="Scripts/Faq.js"></script>
+  <script type="text/javascript">shineLinks('menu-act');</script>
+</main>
+{{>footer}}
+</body>
+</html>

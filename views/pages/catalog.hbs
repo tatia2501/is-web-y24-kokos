@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  {{>head}}
+</head>
+<body>
+{{>header}}
+<main>
+  {{>navbar}}
+  <div>
+    <div id="book_info">
+      <template id="book_temp">
+        <div class="container">
+          <img id="imgBx" alt="book">
+          <div class="details">
+            <div class="content">
+              <h1><br></h1>
+              <h2><br><br></h2>
+              <h3></h3>
+              <button id="basket_btn">в корзину</button>
+              <button id="favourites_btn">в избранное</button>
+            </div>
+          </div>
+        </div>
+      </template>
+    </div>
+    <div class="pagination-section">
+      <ul class="pagination">
+        <li class="page-item prev"><a class="page-link" href="#">&lt;</a></li>
+        <li class="page-item next"><a class="page-link" href="#">&gt;</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script type="text/javascript" src="Scripts/Catalog.js"></script>
+  <script type="text/javascript">shineLinks('menu-act');</script>
+</main>
+{{>footer}}
+</body>
+</html>

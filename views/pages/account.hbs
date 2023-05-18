@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  {{>head}}
+  <link rel="stylesheet" href="Styles/Account.css">
+</head>
+<body>
+{{>header}}
+<main>
+  {{>navbar}}
+  <div id="user_info">
+    <template id="template">
+      <div class="user">
+        <p class="name"></p>
+        <p class="info"></p>
+        <p class="info"></p>
+      </div>
+    </template>
+  </div>
+  <button type="submit" id="logout">выйти</button>
+  <script type="text/javascript" src="Scripts/Account.js"></script>
+  {{> supertokens }}
+  <script type="text/javascript">shineLinks('menu-act');</script>
+</main>
+{{>footer}}
+</body>
+</html>

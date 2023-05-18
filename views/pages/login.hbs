@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  {{>head}}
+  <link rel="stylesheet" href="Styles/Account.css">
+</head>
+<body>
+{{>header}}
+<main>
+  {{>navbar}}
+  <h1>Войти</h1>
+  <form method="post" class="form">
+    <span>
+      <label class="input_name" for="email">Электронная почта</label>
+      <input class="input_data" type="email" id="email" name="email">
+    </span>
+    <span>
+      <label class="input_name" for="password">Пароль</label>
+      <input class="input_data" type="password" id="password" name="password">
+    </span>
+    <input class="input_data" type="submit" value="Войти">
+  </form>
+  <p class="input_name">Нет аккаунта? <a href="/signup">зарегистрироваться</a></p>
+
+  {{> supertokens }}
+  <script>
+    const form = document.querySelector("form");
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const formData = new FormData(e.target);
+      const data = Object.fromEntries(formData);
+
+      try {
+        const response = await supertokensEmailPassword.signIn({
+          formFields: [
+            {
+              id: "email",
+              value: data.email,
+            },
+            {
+              id: "password",
+              value: data.password,
+            },
+          ],
+        });
+
+        if (response.status === "OK") {
+          window.location.href = "/account";
+        } else {
+          window.alert("Произошла ошибка");
+        }
+      } catch (err) {
+        if (err.isSuperTokensGeneralError === true) {
+          window.alert(err.message);
+        } else {
+          window.alert("Что-то пошло не по плану");
+        }
+      }
+    });
+  </script>
+
+  <script type="text/javascript">shineLinks('menu-act');</script>
+</main>
+{{>footer}}
+</body>
+</html>

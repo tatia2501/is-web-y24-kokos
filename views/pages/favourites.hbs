@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  {{>head}}
+</head>
+<body>
+{{>header}}
+<main>
+  {{>navbar}}
+  <div id="book_info">
+    <template id="book_temp">
+      <div class="container">
+        <img id="imgBx" alt="book">
+        <div class="details">
+          <div class="content">
+            <h1><br></h1>
+            <h2><br><br></h2>
+            <h3></h3>
+            <button id="basket_btn">в корзину</button>
+            <button id="delete_btn">убрать</button>
+          </div>
+        </div>
+      </div>
+    </template>
+  </div>
+
+  <script type="text/javascript" src="Scripts/Favourites.js"></script>
+  <script type="text/javascript">shineLinks('menu-act');</script>
+</main>
+{{>footer}}
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  {{>head}}
+  <link rel="stylesheet" href="Styles/Account.css">
+</head>
+<body>
+{{>header}}
+<main>
+  {{>navbar}}
+  <h1>Зарегистрироваться</h1>
+  <form method="post" class="form">
+    <span>
+      <label class="input_name" for="first_name">Имя:</label>
+      <input class="input_data" type="text" id="first_name" name="first_name">
+    </span>
+
+    <span>
+      <label class="input_name" for="last_name">Фамилия:</label>
+      <input class="input_data" type="text" id="last_name" name="last_name">
+    </span>
+
+    <span>
+      <label class="input_name" for="phone">Телефон:</label>
+      <input class="input_data" type="text" id="phone" name="phone">
+    </span>
+
+    <span>
+      <label class="input_name" for="email">Электронная почта:</label>
+      <input class="input_data" type="email" id="email" name="email">
+    </span>
+
+    <span>
+      <label class="input_name" for="login">Логин:</label>
+      <input class="input_data" type="text" id="login" name="login">
+    </span>
+
+    <span>
+      <label class="input_name" for="password">Пароль:</label>
+      <input class="input_data" type="password" id="password" name="password">
+    </span>
+
+    <input class="input_data" type="submit" value="Создать аккаунт">
+  </form>
+  <p class="input_name">Есть аккаунт? <a href="/login">войти</a></p>
+
+  {{> supertokens }}
+  <script>
+    const form = document.querySelector("form");
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const formData = new FormData(e.target);
+      const data = Object.fromEntries(formData);
+
+      try {
+        let response = await supertokensEmailPassword.signUp({
+          formFields: [
+            {
+              id: "first_name",
+              value: data.first_name,
+            },
+            {
+              id: "last_name",
+              value: data.last_name,
+            },
+            {
+              id: "phone",
+              value: data.phone,
+            },
+            {
+              id: "email",
+              value: data.email,
+            },
+            {
+              id: "password",
+              value: data.password,
+            },
+            {
+              id: "login",
+              value: data.login,
+            },
+          ],
+        });
+
+        if (response.status === "OK") {
+          window.location.href = "/login";
+        } else {
+          window.alert("Произошла ошибка");
+        }
+      } catch (err) {
+        if (err.isSuperTokensGeneralError === true) {
+          window.alert(err.message);
+        } else {
+          window.alert("Что-то пошло не по плану");
+        }
+      }
+    });
+  </script>
+
+  <script type="text/javascript">shineLinks('menu-act');</script>
+</main>
+{{>footer}}
+</body>
+</html>
